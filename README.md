@@ -1,4 +1,3 @@
-Cały proces jest w pełni automatyczny – Twoim głównym zadaniem jest po prostu uruchomienie programu i zalogowanie się na swoje konto Carelink
 
 ---
 
