@@ -2,7 +2,7 @@ Cały proces jest w pełni automatyczny – Twoim głównym zadaniem jest po pro
 
 ---
 
-## Instrukcja generowania pliku dla fundacji potzebnego do monitorowania z Medtronic CareLink
+## Instrukcja generowania pliku dla fundacji do monitoringu z Medtronic CareLink
 
 ### Krok 1: Uruchomienie programu
 
