@@ -1,4 +1,4 @@
-Oto krótka, prosta instrukcja krok po kroku przygotowana specjalnie dla Ciebie. Cały proces jest w pełni automatyczny – Twoim głównym zadaniem jest po prostu uruchomienie programu i zalogowanie się na swoje konto.
+Cały proces jest w pełni automatyczny – Twoim głównym zadaniem jest po prostu uruchomienie programu i zalogowanie się na swoje konto Carelink
 
 ---
 
@@ -6,6 +6,7 @@ Oto krótka, prosta instrukcja krok po kroku przygotowana specjalnie dla Ciebie.
 
 ### Krok 1: Uruchomienie programu
 
+1. Pobierz plik Carelink_pobierz_token.bat za pomocą linku:  https://github.com/jrkf/Carelink_get_jwt_token/releases/download/1.0/Carelink_pobierz_token.bat
 1. Kliknij **prawym przyciskiem myszy** na plik `Carelink_pobierz_token.bat`.
 2. Wybierz opcję **"Uruchom jako administrator"**.
 3. Jeśli pojawi się okienko z pytaniem, czy pozwolić aplikacji na wprowadzanie zmian, kliknij **Tak**.
