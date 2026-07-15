@@ -36,12 +36,12 @@ REM =====================================================================
 REM  2. Python - sprawdzenie / instalacja
 REM =====================================================================
 echo [1/6] Sprawdzanie czy Python jest zainstalowany...
-where python >nul 2>&1
-if %errorlevel% equ 0 goto :python_ok
-py -3 --version >nul 2>&1
+
+REM Realny test srodowiska zamiast 'where python'
+python --version >nul 2>&1
 if %errorlevel% equ 0 goto :python_ok
 
-echo       Python nie znaleziony - instaluje...
+echo       Python nie znaleziony lub wadliwy - instaluje...
 set "PYINSTALLER=%TEMP%\python-installer.exe"
 set "PY_URL=https://www.python.org/ftp/python/3.12.7/python-3.12.7-amd64.exe"
 
@@ -51,20 +51,26 @@ if not exist "%PYINSTALLER%" (
     pause & exit /b 1
 )
 
+echo       Instaluje Pythona w tle, prosze czekac...
 "%PYINSTALLER%" /quiet InstallAllUsers=1 PrependPath=1 Include_test=0
 timeout /t 5 /nobreak >nul
 del /f /q "%PYINSTALLER%" >nul 2>&1
 
-REM odswiezenie PATH w tej sesji
+REM Dynamiczne i pewne wczytanie nowej sciezki PATH z rejestru dla bieżącej sesji administratora
 for /f "usebackq tokens=2,*" %%A in (`reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v Path`) do set "SYS_PATH=%%B"
 for /f "usebackq tokens=2,*" %%A in (`reg query "HKCU\Environment" /v Path 2^>nul`) do set "USR_PATH=%%B"
 set "PATH=%SYS_PATH%;%USR_PATH%"
 
-where python >nul 2>&1
+REM Reczne dorzucenie domyslnej sciezki instalacji dla AllUsers (3.12 AMD64), gdyby rejestr sie opoznial
+set "PATH=%ProgramFiles%\Python312\;%ProgramFiles%\Python312\Scripts\;%PATH%"
+
+python --version >nul 2>&1
 if %errorlevel% neq 0 (
-    echo [BLAD] Python zainstalowany, ale nie widac go w PATH.
-    echo Zamknij okno i uruchom ten plik .bat ponownie z nowego terminala.
-    pause & exit /b 1
+    echo [BLAD] Python zainstalowany, ale nie udalo sie go automatycznie aktywowac w tym oknie.
+    echo Uruchamiam instalator ponownie w nowym terminalu...
+    timeout /t 3 /nobreak >nul
+    start "" cmd /c "%~f0"
+    exit /b 0
 )
 
 :python_ok
