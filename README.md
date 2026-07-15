@@ -1,4 +1,4 @@
-Cały proces jest w pełni automatyczny – Twoim głównym zadaniem jest po prostu uruchomienie programu i zalogowanie się na swoje konto Carelink
+<img width="945" height="542" alt="image" src="https://github.com/user-attachments/assets/df4b471f-4a98-4462-aa2d-8940f54f7326" />Cały proces jest w pełni automatyczny – Twoim głównym zadaniem jest po prostu uruchomienie programu i zalogowanie się na swoje konto Carelink
 
 ---
 
@@ -15,7 +15,8 @@ Cały proces jest w pełni automatyczny – Twoim głównym zadaniem jest po pro
 
 Program zacznie pobierać i instalować potrzebne składniki. Po chwili w czarnym oknie pojawi się pytanie:
 
-> `Czy to konto CareLink z USA? (t/N)[cite_start]:` 
+> <img width="1592" height="893" alt="image" src="https://github.com/user-attachments/assets/bc1d7c7a-6596-4375-b93f-14edbbbc10fc" />
+
 > 
 > 
 
@@ -29,6 +30,7 @@ Program zacznie pobierać i instalować potrzebne składniki. Po chwili w czarny
 
 
 2. W otwartym oknie wpisz swój **login oraz hasło** do konta CareLink.
+<img width="945" height="542" alt="image" src="https://github.com/user-attachments/assets/4596fa36-fdf9-4752-883b-35dc0b669bd2" />
 
 
 3. Jeśli na ekranie pojawi się weryfikacja antybotowa (**reCAPTCHA**, np. zaznaczanie obrazków), rozwiąż ją ręcznie.
