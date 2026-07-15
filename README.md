@@ -1,4 +1,4 @@
-<img width="945" height="542" alt="image" src="https://github.com/user-attachments/assets/df4b471f-4a98-4462-aa2d-8940f54f7326" />Cały proces jest w pełni automatyczny – Twoim głównym zadaniem jest po prostu uruchomienie programu i zalogowanie się na swoje konto Carelink
+Cały proces jest w pełni automatyczny – Twoim głównym zadaniem jest po prostu uruchomienie programu i zalogowanie się na swoje konto Carelink
 
 ---
 
