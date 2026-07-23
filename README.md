@@ -44,7 +44,7 @@ Po zakończeniu działania programu, w tym samym folderze, w którym znajduje si
 
 1. Wejdź do tego podfolderu (`carelink-python-client-main`).
 2. Znajdź w nim nowo utworzony plik o nazwie **`logindata.json`**. Zmień jego nazwe na imie_nazwisko.json
-3. Wyślij ten plik jako załącznik w wiadomości e-mail na adres fundacji.
+3. Wyślij ten plik jako załącznik w wiadomości e-mail na adres fundacji: turnusy@fundacja-cukrzyca.pl
 
 ---
 
